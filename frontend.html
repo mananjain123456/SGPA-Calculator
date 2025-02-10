@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RTU CSE SGPA Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>RTU CSE SGPA Calculator</h1>
+    <form id="sgpaForm">
+      <label for="semester">Select Semester:</label>
+      <select id="semester" onchange="loadSubjects()" required>
+        <option value="">--Select Semester--</option>
+        <option value="1">Semester 1</option>
+        <option value="2">Semester 2</option>
+        <!-- Add more semesters as needed -->
+      </select>
+
+      <div id="subjectFields"></div>
+
+      <button type="submit">Calculate SGPA</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

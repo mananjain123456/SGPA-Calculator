@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    max-height: 80vh; /* Ensures it doesn’t exceed the viewport */
+    overflow-y: auto; /* Enables vertical scrolling if content overflows */
+}
+
+/* Custom Scrollbar for Webkit browsers (Chrome, Safari) */
+.container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 4px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+select, button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.subject {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
